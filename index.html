@@ -2,39 +2,81 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Извинение</title>
+  <title>Извини меня 🙏</title>
   <style>
     body {
-      background-color: #fff0f5;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6f0, #e6f7ff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
       text-align: center;
-      padding: 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     h1 {
-      color: #d63384;
+      font-size: 3em;
+      color: #e91e63;
+      margin-bottom: 10px;
+      animation: fadeInDown 1.2s ease;
     }
 
     p {
-      font-size: 20px;
-      color: #333;
+      font-size: 1.3em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      animation: fadeInUp 1.5s ease;
     }
 
-    img {
-      max-width: 300px;
-      margin: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    .flowers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    .flowers img {
+      max-width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .flowers img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Прости меня 🙏</h1>
-  <p>Я очень сожалею о случившемся. Пожалуйста, прими эти цветы 💐</p>
+  <h1>Извини меня 🙏</h1>
+  <p>Мне очень жаль, что так получилось. Я правда не хотел обидеть тебя. Прими эти цветы как знак моей искренней извинения.</p>
+
+  <div class="flowers">
 
   <img src="https://flomaster.top/o/uploads/posts/2024-02/1708675978_flomaster-top-p-kot-v-sapogakh-iz-shreka-pinterest-risunok-1.jpg?auto=format&fit=crop&w=600&q=80" alt="Цветок 1">
   <img src="https://cdn.pixabay.com/animation/2023/03/20/08/12/08-12-06-1_512.gif" alt="Гифка с цветами">
+</div>
 
 </body>
 </html>
